@@ -60,7 +60,7 @@ async function setForm() {
 function validationInputs(element) {
     var regex = {
         email: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
-        password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/, 
+        password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, 
       }
     var term = element.value;
     if (regex[element.id].test(term)) {

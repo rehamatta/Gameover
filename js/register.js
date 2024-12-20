@@ -71,8 +71,8 @@ function validationInputs(element) {
     var regex = {
         name:/^(?:[a-zA-Z0-9\s@,=%$#&_\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDCF\uFDF0-\uFDFF\uFE70-\uFEFF]|(?:\uD802[\uDE60-\uDE9F]|\uD83B[\uDE00-\uDEFF])){2,20}$/,
         email: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
-        password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/,
-        rePassword: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/,
+        password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+        rePassword: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
         phone: /^01[0125]\d{8}$/,
       }
     var term = element.value;
